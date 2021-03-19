@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaunchDarkly_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shein-product-page" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-CI-22g">
+                                <rect key="frame" x="0.0" y="34" width="414" height="828"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gue-OX-Ogp">
+                                <rect key="frame" x="0.0" y="823" width="414" height="39"/>
+                                <state key="normal" title="STORE OFFLINE" backgroundImage="shein-add-to-cart-btn"/>
+                                <connections>
+                                    <action selector="btnBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qd-QB-uwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cqd-CI-22g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Tu-cx-HIg"/>
+                            <constraint firstItem="gue-OX-Ogp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MzW-8t-yu6"/>
+                            <constraint firstItem="gue-OX-Ogp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Pj3-bN-kgj"/>
+                            <constraint firstItem="cqd-CI-22g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SFI-Zk-orq"/>
+                            <constraint firstItem="cqd-CI-22g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a0E-Tf-SCC"/>
+                            <constraint firstItem="cqd-CI-22g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-10" id="fFK-hP-1aE"/>
+                            <constraint firstItem="gue-OX-Ogp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yvb-SA-WdA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="purchase_button" destination="gue-OX-Ogp" id="DbM-fA-UH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shein-add-to-cart-btn" width="272" height="39"/>
+        <image name="shein-product-page" width="188.5" height="380.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
